@@ -1,2 +1,4 @@
-anthropic
 streamlit
+gspread
+google-auth
+groq
