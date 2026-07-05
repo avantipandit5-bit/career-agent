@@ -46,7 +46,7 @@ def save_to_sheet(company, job_title, match_score, status, likelihood):
 def ask_groq(api_key, prompt):
     client = groq.Groq(api_key=api_key)
     response = client.chat.completions.create(
-        model="llama3-70b-8192",
+        model="llama-3.3-70b-versatile",
         messages=[{"role": "user", "content": prompt}],
         max_tokens=2000
     )
